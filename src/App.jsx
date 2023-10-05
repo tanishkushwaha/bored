@@ -5,13 +5,9 @@ const App = () => {
 
     const [url, setUrl] = useState('');
 
-    const customHeaders = {
-        'ngrok-skip-browser-warning': 'true'
-      };
-
     const nextActivity = () => {
         
-        fetch('https://www.boredapi.com/api/activity', { headers: customHeaders })
+        fetch('https://www.boredapi.com/api/activity')
         .then(res => res.json())
         .then(data => {
 
