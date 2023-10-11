@@ -10,16 +10,22 @@
     }  
  }
 
-html, body {
+body {
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-span {
+.activity-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-container span {
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     color: #bbb;
@@ -29,3 +35,51 @@ span {
     -webkit-tap-highlight-color: transparent;
     animation: fadeIn 0.5s ease-in;
 }
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    /* background: #000 url("./assets/ripple.gif") no-repeat center; */
+    /* z-index: 1; */
+}
+
+@keyframes ldio-d8rv4bk8fds {
+  0% { transform: rotate(0deg) }
+  50% { transform: rotate(180deg) }
+  100% { transform: rotate(360deg) }
+}
+
+.ldio-d8rv4bk8fds div {
+  position: absolute;
+  animation: ldio-d8rv4bk8fds 0.5s linear infinite;
+  width: 80px;
+  height: 80px;
+  top: 60px;
+  left: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 #bbbbbb;
+  transform-origin: 40px 42px;
+}
+
+.loadingio-spinner-eclipse-kganed8ra7 {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: #000000;
+}
+
+.ldio-d8rv4bk8fds {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+
+.ldio-d8rv4bk8fds div { box-sizing: content-box; }
